@@ -2,11 +2,6 @@
 
 
 var isSquare = function(n){
-let range=[];
-  for(let i=-1;i<=n;i++){
-  range.push(i);
+let result = Math.sqrt(n);
+return Number.isInteger(result);
 }
-  let squared = range.some(function(item){
-    return item*item==n;
-  });
-return squared;
