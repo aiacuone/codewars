@@ -1,0 +1,12 @@
+//INSTRUCTIONS: Given an integral number, determine if it's a square number:
+
+
+var isSquare = function(n){
+let range=[];
+  for(let i=-1;i<=n;i++){
+  range.push(i);
+}
+  let squared = range.some(function(item){
+    return item*item==n;
+  });
+return squared;
