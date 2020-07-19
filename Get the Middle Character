@@ -1,0 +1,13 @@
+function getMiddle(s)
+{
+let length = s.length;
+  let half = length/2;
+  if(s.length==1){
+    return s
+  }
+  if(Number.isInteger(half)){
+    return s[half-1]+s[half]
+  }else{
+return s[Math.floor(half)];
+  }
+}
